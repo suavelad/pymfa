@@ -15,21 +15,22 @@
 
 
 ### MFA Verification: 
-    1. Insert the code and verify it
+    -   Insert the code and verify it
 
 
-
-### Sample Code:
+#### Sample Code:
     from mfa import MFA
 
 
     1. Generate the MFA URL AND SECRET KEY
         m = MFA(service_name, user_details)
             => service_name is the name of the service (eg: company name) : STRING
-            => user_details is the user details (eg: email address, phone number, etc):  STRING
+            => user_detail is the user details (eg: email address, phone number, etc):  STRING
         
         Example: 
-            m = MFA('Sunny Inc','sunday@test.com') 
+            service_name = 'Sunny Inc'
+            user_details = 'sunday@test.com'
+            m = MFA(service_name, user_details) 
             mfa_url,secret_key = m.generate_mfa_code()
             print(mfa_url)
             print(secret_key)
