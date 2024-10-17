@@ -24,10 +24,15 @@
 
 
     1. Generate the MFA URL AND SECRET KEY
-        m = MFA('sunday@test.com')
-        mfa_url,secret_key = m.generate_mfa_code()
-        print(mfa_url)
-        print(secret_key)
+        m = MFA(service_name, user_details)
+            => service_name is the name of the service (eg: company name) : STRING
+            => user_details is the user details (eg: email address, phone number, etc):  STRING
+        
+        Example: 
+            m = MFA('Sunny Inc','sunday@test.com') 
+            mfa_url,secret_key = m.generate_mfa_code()
+            print(mfa_url)
+            print(secret_key)
 
     2. Generate the QR Code version of the MFA URL
         m.generate_qr_code(mfa_url)
