@@ -50,10 +50,10 @@
 
 ### NOTE: 
 
-    1 -> Developer will be expected to the secret Key for the use ( it should be unique for each user)
+    1 -> Developer will be expected to save the secret Key for each user (it should be unique for each user)
             
     2 -> End User should be asked to save the secret key or I will suggest you save it in a db with a
-        key value pair where the key is the recovery code (unique) and value is the secret key. So you share the recovery code with the user
+        key value pair or a field where the key is the recovery code (unique) and value is the secret key. So you share the recovery code with the user
 
     3 -> When they can't recover the qr or lost the mobile device, you can ask them for the recovery code then use it to get the secret 
         key then use it to setup on the 3rd party authenticator app.
