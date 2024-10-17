@@ -20,5 +20,6 @@ dependencies = [
     "pillow"
 ]
 
+
 [project.urls]
 homepage = "https://your_project_homepage.com"
