@@ -36,7 +36,10 @@
             print(secret_key)
 
     2. Generate the QR Code version of the MFA URL
-        m.generate_qr_code(mfa_url)
+        m.generate_qr_code(mfa_url)   
+         <!-- Thi is optional because the mfa_url should be converted to a qr code on the 
+         client side ( Fromtend application : Web or Mobile App) -->
+      
 
 
     3. Verify the Generated Code
@@ -50,13 +53,17 @@
 
 ### NOTE: 
 
-    1 -> Developer will be expected to save the secret Key for each user (it should be unique for each user)
+    1 -> Developer will be expected to save the secret Key for each user 
+        (it should be unique for each user)
             
-    2 -> End User should be asked to save the secret key or I will suggest you save it in a db with a
-        key value pair or a field where the key is the recovery code (unique) and value is the secret key. So you share the recovery code with the user
+    2 -> End User should be asked to save the secret key or I will suggest 
+        you save it in a db with a key value pair or a field where the key 
+        is the recovery code (unique) and value is the secret key. So you share 
+        the recovery code with the user
 
-    3 -> When they can't recover the qr or lost the mobile device, you can ask them for the recovery code then use it to get the secret 
-        key then use it to setup on the 3rd party authenticator app.
+    3 -> When they can't recover the qr or lost the mobile device, 
+        you can ask them for the recovery code then use it to get the secret key 
+        from the db and then use it to setup on the 3rd party authenticator app.
 
 
 
