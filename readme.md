@@ -37,8 +37,9 @@
 
     2. Generate the QR Code version of the MFA URL
         m.generate_qr_code(mfa_url)   
-         <!-- Thi is optional because the mfa_url should be converted to a qr code on the 
-         client side ( Fromtend application : Web or Mobile App) -->
+       
+        ##### NOTE: This is optional because the mfa_url should be converted to a qr code on the 
+                    client side ( Fromtend application : Web or Mobile App)
       
 
 
