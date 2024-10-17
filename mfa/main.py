@@ -4,7 +4,7 @@ from decouple import config
 
 
 user_email = "sunnex@mail.com"
-service_config = config("Suave Payment")
+service_name = config("SERVICE_NAME")
 
 class MFA:
     def __init__(self,service_name, user_email):
