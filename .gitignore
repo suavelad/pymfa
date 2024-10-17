@@ -1,6 +1,6 @@
 *.png
+.env
 */__pycache___/
 __pycache___/
 env/
 */env/
-.env

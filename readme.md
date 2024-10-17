@@ -1,7 +1,11 @@
+# MFA SETUP AND VERIFICATION PACKAGE
+
+
+
 ## This is a python package for MFA setup and verification using 3rd Party Authenticating Applications (like Google Authenticator, Microsoft Authenticator,Sale Force, etc)
 
 
-# Setup MFA: Onboard on a 3rd Party Authenticator Application:
+### Setup MFA: Onboard on a 3rd Party Authenticator Application:
     1. Generate the MFA URL AND SECRET KEY
     2. Generate the QR Code version of the MFA URL
     3. Integrate with the 3rd party Authenticator :
@@ -10,12 +14,12 @@
 
 
 
-# MFA Verification: 
+### MFA Verification: 
     1. Insert the code and verify it
 
 
 
-# Sample Code:
+### Sample Code:
     from mfa import MFA
 
 
@@ -38,7 +42,8 @@
 
 
 
-NOTE: 
+### NOTE: 
+
     1 -> Developer will be expected to the secret Key for the use ( it should be unique for each user)
             
     2 -> End User should be asked to save the secret key or I will suggest you save it in a db with a
