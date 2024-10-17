@@ -1,1 +1,1 @@
-from mfa import MFA
+from main import *
