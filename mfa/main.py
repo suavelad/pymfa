@@ -6,6 +6,7 @@ from decouple import config
 user_email = "sunnex@mail.co"
 service_name = config("SERVICE_NAME")
 
+
 class MFA:
     def __init__(self,service_name, user_email):
         self.secret_key = pyotp.random_base32()

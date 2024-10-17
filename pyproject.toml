@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mfa-authenticator"
-version = "1.0.4.8"
+version = "1.0.4.10"
 description = "This helps you setup MFA with 3rd Party Authenticator (Google Authenticator, Microsoft Authenticator, etc)"
 requires-python = ">=3.10"
 authors = [
