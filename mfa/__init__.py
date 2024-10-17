@@ -1,1 +1,1 @@
-from main import MFA
+from mfa.main import  MFA
