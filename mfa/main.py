@@ -4,12 +4,12 @@ from decouple import config
 
 
 user_email = "sunnex@mail.com"
-
+service_config = config("Suave Payment")
 
 class MFA:
-    def __init__(self, user_email):
+    def __init__(self,service_name, user_email):
         self.secret_key = pyotp.random_base32()
-        self.service_name = config("SERVICE_NAME")
+        self.service_name = service_name
         self.user_email = user_email
 
     def generate_mfa_code(self):
